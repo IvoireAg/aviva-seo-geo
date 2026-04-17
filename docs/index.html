@@ -5,48 +5,113 @@
   <title>Dashboard Aviva SEO/GEO — Semana 2026-W16</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-    body { font-family: -apple-system, Arial, sans-serif; max-width: 1100px;
-            margin: 2rem auto; padding: 0 1rem; color: #282828; }
-    h1 { color: #282828; }
-    .tagline { background: #FFFF02; padding: 1rem; border-radius: 4px;
-                font-weight: bold; margin: 1rem 0; }
-    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
-    .kpi { background: #f5f5f5; padding: 1rem; border-radius: 4px; }
-    .kpi-value { font-size: 2rem; font-weight: bold; }
-    .kpi-label { color: #737373; font-size: 0.9rem; }
+    * { box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', -apple-system, Arial, sans-serif;
+            max-width: 1200px; margin: 2rem auto; padding: 0 1.5rem;
+            color: #282828; line-height: 1.5; }
+    h1 { color: #282828; font-size: 2rem; margin-bottom: 0.25rem; }
+    h2 { color: #282828; font-size: 1.5rem; margin-top: 2.5rem;
+          border-bottom: 3px solid #FFFF02; padding-bottom: 0.5rem; }
+    .periodo { color: #737373; margin-bottom: 1.5rem; }
+    .tagline { background: linear-gradient(90deg, #FFFF02 0%, #FFFFA0 100%);
+                padding: 1.25rem; border-radius: 6px; font-weight: 600;
+                font-size: 1.1rem; margin: 1rem 0; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr);
+                  gap: 1rem; margin-bottom: 1rem; }
+    .kpi { background: #f7f7f7; padding: 1rem; border-radius: 6px;
+            border-left: 4px solid #282828; }
+    .kpi-value { font-size: 2rem; font-weight: 700; line-height: 1.1; }
+    .kpi-label { color: #737373; font-size: 0.85rem;
+                   text-transform: uppercase; letter-spacing: 0.5px; }
+    .kpi-delta { font-size: 0.9rem; margin-top: 0.25rem; }
     table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-    th, td { padding: 0.5rem; border-bottom: 1px solid #C9C9C9; text-align: left; }
-    th { background: #282828; color: #FFFF02; }
-    .win { color: #00873C; } .loss { color: #C8102E; }
+    th, td { padding: 0.65rem 0.5rem; border-bottom: 1px solid #C9C9C9;
+              text-align: left; font-size: 0.95rem; }
+    th { background: #282828; color: #FFFF02;
+          font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .win { color: #00873C; font-weight: 600; }
+    .loss { color: #C8102E; font-weight: 600; }
+    .migracao-card { background: #fafafa; border: 2px solid #C8102E;
+                       padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+    .semaforo { display: inline-block; width: 14px; height: 14px;
+                  border-radius: 50%; background: #C8102E;
+                  margin-right: 0.5rem; vertical-align: middle; }
+    .badge-origin { display: inline-block; padding: 2px 8px; border-radius: 12px;
+                      font-size: 0.75rem; background: #f0f0f0; color: #555; }
+    .badge-aviva { background: #282828; color: #FFFF02; }
+    .badge-legacy { background: #FFB400; color: #282828; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #C9C9C9;
+              color: #737373; font-size: 0.85rem; }
   </style>
 </head>
 <body>
   <h1>Aviva SEO/GEO — Semana 2026-W16</h1>
-  <div class="tagline">+2 cliques em Hot Park Rio Quente puxam crescimento semanal</div>
+  <div class="periodo">13/04 - 19/04 · Ivoire x Aviva · 3 properties consolidadas (aviva.com.br + 2 legados em redirect 301)</div>
+  <div class="tagline">Semana de consolidacao: dados sendo capturados, pipeline executivo abaixo</div>
 
-  <h2>KPIs GSC</h2>
+  <h2>KPIs Visibilidade (GSC 3 properties consolidadas)</h2>
   <div class="kpi-grid">
-    <div class="kpi"><div class="kpi-label">Cliques</div>
-      <div class="kpi-value">34</div>
-      <div>+14 WoW</div></div>
+    <div class="kpi"><div class="kpi-label">Cliques organicos</div>
+      <div class="kpi-value">325</div>
+      <div class="kpi-delta">+139 WoW</div></div>
     <div class="kpi"><div class="kpi-label">Impressoes</div>
-      <div class="kpi-value">548</div></div>
+      <div class="kpi-value">33,513</div></div>
     <div class="kpi"><div class="kpi-label">CTR</div>
-      <div class="kpi-value"></div></div>
+      <div class="kpi-value">0.97%</div></div>
     <div class="kpi"><div class="kpi-label">Posicao media</div>
-      <div class="kpi-value"></div></div>
+      <div class="kpi-value">5.92</div></div>
   </div>
 
-  <h2>Top 3 ganhos</h2>
-  <table><tr><th>Pagina</th><th>Dclicks</th><th>Dpos</th></tr>
-    <tr><td>https://prd-site.aviva.com.br/parques/hot-park-rio-quente</td><td class='win'>2</td><td>0.07</td></tr><tr><td>https://prd-site.aviva.com.br/agenda/programacao-diaria-cost</td><td class='win'>2</td><td>2.14</td></tr><tr><td>https://www.aviva.com.br/pacotes</td><td class='win'>2</td><td>0.0</td></tr>
+  <h2>🔄 Migracao 301 — Status</h2>
+  <div class="migracao-card">
+    <div style="font-size:1.1rem;margin-bottom:0.75rem">
+      <span class="semaforo"></span><strong>Semaforo: RED</strong>
+      &nbsp;·&nbsp; Aviva concentra <strong>2.2%</strong> dos cliques agregados das 3 properties
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Redirects mapeados</div>
+        <div class="kpi-value">16</div></div>
+      <div class="kpi"><div class="kpi-label">% cliques vs baseline</div>
+        <div class="kpi-value">1%</div></div>
+      <div class="kpi"><div class="kpi-label">Backlinks transferidos</div>
+        <div class="kpi-value">0</div></div>
+      <div class="kpi"><div class="kpi-label">Tier-1 (DR&gt;=60) novos</div>
+        <div class="kpi-value">0</div></div>
+    </div>
+    <p style="margin-top:1rem;color:#555">
+      Trend 8 semanas (sessoes organicas GA4): <span style="color:#737373;font-size:0.85rem">sem dados de trend</span>
+    </p>
+    <p style="font-size:0.85rem;color:#737373;margin:0">
+      Baseline: 2026-04-17 ·
+      cliques aviva=7 ·
+      rio quente legado=234 ·
+      sauipe legado=84
+    </p>
+  </div>
+
+  <h2>🚨 Alertas e riscos</h2>
+  <p style="color:#00873C">Sem alertas Alta/Media nesta semana.</p>
+
+  <h2>🎯 Proximo foco — Top 3 ROI</h2>
+  <table><tr><th>Acao</th><th>ROI estimado</th><th>Deadline</th><th>Dono</th></tr><tr><td>[Conteudo] Otimizar (striking-distance) - aviva vacation club</td><td><strong>R$ 126</strong></td><td>Sprint atual (7d)</td><td>Conteudo Ivoire</td></tr><tr><td>[Conteudo] CTR-lift: reescrever title + meta - aviva vacation club</td><td><strong>R$ 101</strong></td><td>7 dias</td><td>Conteudo Ivoire</td></tr><tr><td>[Conteudo] CTR-lift: reescrever title + meta - aviva carreiras</td><td><strong>R$ 99</strong></td><td>7 dias</td><td>Conteudo Ivoire</td></tr></table>
+
+  <h2>📈 Top 3 ganhos</h2>
+  <table><tr><th>Pagina</th><th>Origin</th><th>Δ cliques</th><th>Δ posicao</th><th>Causa</th></tr>
+    <tr><td>https://www.rioquente.com.br/blog/patrimonios-culturais-do-estado-de-goias</td><td><span class='badge-origin badge-legacy'>rioquente_legacy</span></td><td class='win'>6</td><td>-0.95</td><td style='font-size:0.85rem'>Recuperacao pos-migracao 301</td></tr><tr><td>https://www.rioquente.com.br/explorar/diversao/sala-de-exercicios</td><td><span class='badge-origin badge-legacy'>rioquente_legacy</span></td><td class='win'>6</td><td>-0.35</td><td style='font-size:0.85rem'>Recuperacao pos-migracao 301</td></tr><tr><td>https://www.costadosauipe.com.br/blog/santa-cruz-cabralia-paraiso-das-praias-par</td><td><span class='badge-origin badge-legacy'>sauipe_legacy</span></td><td class='win'>6</td><td>-0.07</td><td style='font-size:0.85rem'>Recuperacao pos-migracao 301</td></tr>
   </table>
 
-  <h2>Top 3 perdas</h2>
-  <table><tr><th>Pagina</th><th>Dclicks</th><th>Dpos</th></tr>
-    <tr><td>https://prd-site.aviva.com.br/experiencias/capela-parque-das</td><td class='loss'>0</td><td>1.9</td></tr><tr><td>https://www.aviva.com.br/assets/pdf/aviva-codigo-de-conduta-</td><td class='loss'>0</td><td>-0.65</td></tr><tr><td>https://aviva.com.br/</td><td class='loss'>0</td><td>0</td></tr>
+  <h2>📉 Top 3 perdas</h2>
+  <table><tr><th>Pagina</th><th>Origin</th><th>Δ cliques</th><th>Δ posicao</th><th>Diagnostico</th></tr>
+    <tr><td>https://prd-site.aviva.com.br/parques/hot-park-rio-quente</td><td><span class='badge-origin badge-aviva'>aviva</span></td><td class='loss'>2</td><td>0.07</td><td style='font-size:0.85rem'>Verificar backlog Ahrefs + cannibalization</td></tr><tr><td>https://prd-site.aviva.com.br/agenda/programacao-diaria-costa-do-sauipe</td><td><span class='badge-origin badge-aviva'>aviva</span></td><td class='loss'>2</td><td>2.14</td><td style='font-size:0.85rem'>Verificar backlog Ahrefs + cannibalization</td></tr><tr><td>https://www.aviva.com.br/pacotes</td><td><span class='badge-origin badge-aviva'>aviva</span></td><td class='loss'>2</td><td>0.0</td><td style='font-size:0.85rem'>Verificar backlog Ahrefs + cannibalization</td></tr>
   </table>
 
-  <footer><small>Gerado em 2026-04-17 00:19 · Ivoire x Aviva</small></footer>
+  <footer>
+    <strong>Entregaveis desta semana:</strong>
+    0 acoes tecnicas ·
+    5 briefings de conteudo ·
+    0 acoes offpage
+    · ROI total estimado: <strong>R$ 385</strong>
+    <br>Gerado em 2026-04-17 01:03 · Ivoire x Aviva
+  </footer>
 </body>
 </html>
