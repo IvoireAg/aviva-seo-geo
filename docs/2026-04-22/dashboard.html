@@ -112,5 +112,30 @@
     40 acoes offpage
     <br>Gerado em 2026-04-22 10:35 · Ivoire x Aviva
   </footer>
+<script id="history-dropdown">
+(function(){
+  fetch('/aviva-seo-geo/_dates.json').then(r=>r.json()).then(function(dates){
+    var container = document.createElement('div');
+    container.style.cssText = 'position:fixed;top:1rem;right:1rem;z-index:9999;background:#fff;padding:.5rem;border:1px solid #C9C9C9;border-radius:4px;font-family:-apple-system,Arial,sans-serif;';
+    var label = document.createElement('label');
+    label.textContent = 'Historico: ';
+    label.style.marginRight = '.5rem';
+    var sel = document.createElement('select');
+    sel.style.padding = '.25rem';
+    dates.forEach(function(d){
+      var opt = document.createElement('option'); opt.value = d; opt.textContent = d;
+      sel.appendChild(opt);
+    });
+    var current = (location.pathname.match(/(\d{4}-\d{2}-\d{2})/) || [])[1];
+    if(current) sel.value = current;
+    sel.addEventListener('change', function(){
+      location.href = '/aviva-seo-geo/' + sel.value + '/dashboard.html';
+    });
+    container.appendChild(label); container.appendChild(sel);
+    document.body.appendChild(container);
+  }).catch(function(){});
+})();
+</script>
+
 </body>
 </html>
